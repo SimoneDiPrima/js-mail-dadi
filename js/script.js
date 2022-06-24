@@ -14,13 +14,13 @@ const Autorizzate = [`simone.diprimagenova@virgilio.it`,`mario.diprimagenova@vir
         `paolo.diprimagenova@virgilio.it`,`pietro.diprimagenova@virgilio.it`,`mauro.diprimagenova@virgilio.it`];
 
    const emailUtente= prompt(`scrivi l email d accesso`) ;
-
+   
         for(let i=0 ; i < Autorizzate.length ; i++){
             if (emailUtente == Autorizzate[i]){
                 console.log(`bienvenidos`);
               }
             else{
-                console.log(`abbiamo gia chiamato le forze dell ordine!!`);
+                console.log('scappa!');
             }
            
         }
