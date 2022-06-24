@@ -10,8 +10,18 @@ stampa in console un messaggio appropriato sull’esito del controllo.
 // 2-chiedo una mail all utente(forse meglio come input che come prompt);
 // 3-verifico se l email è autorizzata o no e quindi se fa parte della lista delle mail autorizzate o no
 
+const Autorizzate = [`simone.diprimagenova@virgilio.it`,`mario.diprimagenova@virgilio.it`,
+        `paolo.diprimagenova@virgilio.it`,`pietro.diprimagenova@virgilio.it`,`mauro.diprimagenova@virgilio.it`];
 
-const mailAutorizzate = ["diprima.simone@virgilio.it",
-                        "mario.rossi@virgilio.it","gerry.Scotti@virgilio.it","paoloverdi@virgilio.it",
-                        "mariobanchi@virgilio.it"];
-                        
+   const emailUtente= prompt(`scrivi l email d accesso`) ;
+
+        for(let i=0 ; i < Autorizzate.length ; i++){
+            if (emailUtente == Autorizzate[i]){
+                console.log(`bienvenidos`);
+              }
+            else{
+                console.log(`abbiamo gia chiamato le forze dell ordine!!`);
+            }
+           
+        }
+      
