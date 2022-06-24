@@ -11,13 +11,15 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve?*/
 -3 stabilisci il vincitore in base a chi fa il punteggio piu alto e stampa a console the winner!*/
  //o mettere la funzione math random dentro a dado e i due giocatori come costanti singole?
 
- const dado = [0,1,2,3,4,5,6];
- 
- 
+ let humanPlayer = Math.round(Math.random()*5 + 1);
+ let cpuPlayer = Math.round(Math.random()*5 + 1);
+ console.log(humanPlayer);
+ console.log(cpuPlayer);
 
 
-
-
- for(i=0;i<dado.length;i++){
-    console.log(dado[i]);
- }
+if(humanPlayer > cpuPlayer){
+    console.log(`eh ci devi ancora arrivare all uomo macchina!!`);
+}
+else{
+    console.log(`terminator è vicino!!`);
+}
