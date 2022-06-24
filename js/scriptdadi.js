@@ -20,6 +20,9 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve?*/
 if(humanPlayer > cpuPlayer){
     console.log(`eh ci devi ancora arrivare all uomo macchina!!`);
 }
+else if(humanPlayer === cpuPlayer){
+    console.log(`incredibile pareggio!!`)
+}
 else{
     console.log(`terminator è vicino!!`);
 }
