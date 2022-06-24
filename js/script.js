@@ -16,12 +16,23 @@ const Autorizzate = [`simone.diprimagenova@virgilio.it`,`mario.diprimagenova@vir
    const emailUtente= prompt(`scrivi l email d accesso`) ;
    
         for(let i=0 ; i < Autorizzate.length ; i++){
-            if (emailUtente == Autorizzate[i]){
-                console.log(`bienvenidos`);
-              }
-            else{
-                console.log('scappa!');
-            }
-           
+           if( emailUtente === Autorizzate[0]){
+            console.log(`bienvenidos`);
+           }
+           else if( emailUtente === Autorizzate[1]){
+            console.log(`bienvenidos`);
+           }
+           else if( emailUtente === Autorizzate[2]){
+            console.log(`bienvenidos`);
+           }
+           else if( emailUtente === Autorizzate[3]){
+            console.log(`bienvenidos`);
+           }
+           else if( emailUtente === Autorizzate[4]){
+            console.log(`bienvenidos`);
+           }
+           else{
+            console.log(`stai per essere arrestato!!`);
+           }
         }
       
