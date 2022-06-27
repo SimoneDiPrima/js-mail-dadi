@@ -13,9 +13,9 @@ stampa in console un messaggio appropriato sull’esito del controllo.
 const Autorizzate = [`simone.diprimagenova@virgilio.it`,`mario.diprimagenova@virgilio.it`,
         `paolo.diprimagenova@virgilio.it`,`pietro.diprimagenova@virgilio.it`,`mauro.diprimagenova@virgilio.it`];
 
-   const emailUtente= prompt(`scrivi l email d accesso`) ;
+   const emailUtente= prompt(`scrivi l username:`) ;
    let emailAutorizzata = false;
-        for(let i=0 ; i < Autorizzate.length ; i++){
+        for(let i = 0 ; i < Autorizzate.length ; i++){
           console.log(Autorizzate[i]);
           if(emailUtente === Autorizzate[i]){
            emailAutorizzata = true;
